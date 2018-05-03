@@ -1,12 +1,12 @@
-** Architecture:           
-    *** Option 1:
+## Architecture:           
+    ### Option 1:
     server
         app.js
         routes
             index.js (all routes here)
             handlers (with all that have all logic)
 
-    *** Option 2:
+    ### Option 2:
     server
         app.js (all routes here)
         routes
