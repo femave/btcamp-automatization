@@ -23,7 +23,7 @@ export const extractor = async ({ config, queries }) => {
       ({ SELECTOR: selector, property }) => {
         return [].slice
           .call(document.querySelectorAll(selector))
-          .map(el => el.innerHTML)
+          .map(el => el[property])
       },
       { SELECTOR, property },
     )
